@@ -1,0 +1,84 @@
+/* recursos/css/style.css */
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    padding: 20px; 
+    background-color: #f4f7f6; 
+    color: #333; 
+}
+.container { 
+    max-width: 800px; 
+    margin: auto; 
+    background-color: #ffffff; 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+h2 { 
+    color: #2c3e50; 
+    text-align: center; 
+    margin-bottom: 25px; 
+}
+p { 
+    text-align: center; 
+    color: #555; 
+}
+.botoes-container { 
+    text-align: center; 
+    margin-bottom: 30px; 
+}
+.ativo-btn { 
+    padding: 12px 25px; 
+    margin: 8px; 
+    cursor: pointer; 
+    border: none; 
+    border-radius: 25px; 
+    background-color: #3498db; 
+    color: white; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.ativo-btn:hover { 
+    background-color: #2980b9; 
+    transform: translateY(-2px); 
+}
+.ativo-btn:active { 
+    transform: translateY(0); 
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2); 
+}
+#resultado { 
+    margin-top: 20px; 
+    padding: 20px; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 8px; 
+    background-color: #f9fcfb; 
+    min-height: 100px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 1.1em; 
+    color: #444; 
+    text-align: center;
+}
+.card-resultado {
+    text-align: left;
+    padding: 20px;
+    background-color: #e6ffe6; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card-resultado h4 { color: #28a745; margin-top: 0; }
+.card-resultado p { margin: 8px 0; color: #333; }
+.card-resultado strong { color: #2c3e50; }
+.erro-resultado {
+    background-color: #ffe6e6; 
+    color: #dc3545;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.loading-message {
+    color: #3498db;
+    font-style: italic;
+}
