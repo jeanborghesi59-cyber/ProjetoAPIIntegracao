@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <title>Cliente API de Dados Financeiros - Agregador Visual</title>
+     <title>Cliente API de Dados Financeiros - Agregador Visual</title>
     
+     <!-- O CSS é carregado aqui para estilizar a página -->
+
     <link rel="stylesheet" href="recursos/css/style.css">
 </head>
+
 <body>
-    <div class="container">
-        <h2>💰 Cliente para API de Agregação Financeira</h2>
-        <p>Clique em um ativo para buscar dados reais de preço (CoinGecko) e simulados de volume:</p>
+     <div class="container">
+         <h2>💰 Cliente para API de Agregação Financeira</h2>
+         <p>Clique em um ativo para buscar dados reais de preço (CoinGecko) e simulados de volume:</p>
 
-        <div class="botoes-container">
-            <button class="ativo-btn" data-ativo="bitcoin">Bitcoin</button>
-            <button class="ativo-btn" data-ativo="ethereum">Ethereum</button>
-            <button class="ativo-btn" data-ativo="solana">Solana</button>
-            <button class="ativo-btn" data-ativo="dogecoin">Dogecoin</button>
-            <button class="ativo-btn error-btn" data-ativo="ativo_invalido" style="background-color: #e74c3c;">Ativo Inválido (Teste de 404)</button>
-        </div>
+         <!-- Seção de Interação -->
+         <div class="botoes-container">
+             <!-- Botões que disparam a função de busca no script.js -->
+             <button class="ativo-btn" data-ativo="bitcoin">Bitcoin</button>
+             <button class="ativo-btn" data-ativo="ethereum">Ethereum</button>
+             <button class="ativo-btn" data-ativo="solana">Solana</button>
+             <button class="ativo-btn" data-ativo="dogecoin">Dogecoin</button>
+             <!-- Botão para testar o tratamento de erro (Resiliência) -->
+             <button class="ativo-btn error-btn" data-ativo="ativo_invalido"
+                style="background-color: #e74c3c;">Ativo Inválido (Teste de 404)</button>
+             </div>
 
-        <h3>Resultado da Consulta Agregada e Normalizada</h3>
-        <div id="resultado" class="loading-message">Clique em um ativo para buscar dados...</div>
-    </div>
+         <h3>Resultado da Consulta Agregada e Normalizada</h3>
+        <!-- Este DIV recebe o resultado processado da API (o JSON consolidado) -->
+         <div id="resultado" class="loading-message">Clique em um ativo para buscar dados...</div>
+         </div>
 
+     <!-- O JavaScript que contém a lógica de 'fetch' para o FastAPI -->
+    
     <script src="recursos/js/script.js"></script>
 </body>
+
 </html>
